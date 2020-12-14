@@ -66,7 +66,7 @@
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url('admin_files/app-assets/css-rtl/custom-rtl.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('admin_files/assets/css/style-rtl.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/styles-rtl.css') }}">
 
     @endif
 
