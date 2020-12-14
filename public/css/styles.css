@@ -1,0 +1,95 @@
+/* style */
+
+.btn.btn-sm.btn-icon:hover {
+    background-color: #6d63e6;
+    color: #fff;
+}
+
+label {
+    font-size: 13px;
+}
+
+.btn-default {
+    color: #666666;
+    background-color: #e6e6e6;
+    border-color: #ccc;
+}
+
+.btn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+    background-color: #1caf9a !important;
+}
+
+
+/* portlet */
+
+.portlet .card .card-header {
+    background-color: #5b53c3;
+    padding: 1rem 1rem;
+}
+
+.portlet .card .card-header .card-title {
+    color: #fff;
+}
+
+
+/* breadcrumb */
+
+.breadcrumb {
+    border-right: unset;
+    border-left: unset;
+}
+
+.content-header .breadcrumbs-style {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+/* modal */
+
+.modal-header {
+    border-top-right-radius: unset;
+    border-top-left-radius: unset;
+    border-bottom: unset;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+.modal-header .close {
+    color: #ffffff;
+    text-shadow: unset;
+    opacity: 1;
+}
+
+.modal-body {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    border: unset;
+    border-radius: unset;
+}
+
+@media (min-width: 992px) {
+    .modal-md {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+    .modal-lg {
+        max-width: 900px;
+    }
+}
+
+.modal .modal-footer {
+    border: 0;
+    padding: 15px;
+}
