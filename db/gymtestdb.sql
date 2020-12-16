@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 16, 2020 at 09:48 AM
+-- Generation Time: Dec 16, 2020 at 03:30 PM
 -- Server version: 10.5.4-MariaDB-log
 -- PHP Version: 7.4.10
 
@@ -169,7 +169,7 @@ CREATE TABLE `users` (
   `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default.png',
-  `active` int(11) NOT NULL DEFAULT 1,
+  `enabled` int(11) NOT NULL DEFAULT 1,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -182,8 +182,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `email`, `image`, `active`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'super', 'super_admin', 'super@admin.com', 'default.png', 1, NULL, '$2y$10$2VgZYiaNPC8cYmsAhH2UceFQJvuXzHR1.88tcg0Rc1cFe87AaS3Ee', NULL, '2020-12-15 22:00:00', '2020-12-15 22:00:00', NULL);
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `image`, `enabled`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'super', 'super_admin', 'super@admin.com', 'default.png', 1, NULL, '$2y$10$.ur78EVB1wJ.XnAU1zxGZepmOCXIiA5Pqmr0QMMQV4.35cJqSRkRq', NULL, '2020-12-15 22:00:00', '2020-12-15 22:00:00', NULL);
 
 --
 -- Indexes for dumped tables

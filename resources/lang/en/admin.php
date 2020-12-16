@@ -53,4 +53,21 @@ return [
     'file_upload'               => 'File Upload',
     'icon_upload'               => 'Icon Upload',
     'action'                    => 'Action',
+
+    'permissions'               => 'Permissions',
+    'name'                      => 'Name',
+    'username'                  => 'Username',
+    'title'                     => 'Title',
+    'phone_code'                => 'Phone Code',
+    'iso_code'                  => 'Iso Code',
+    'description'               => 'Description',
+    'created_at'                => 'Created at',
+
+    'all_rights'                => 'All Rights Reserved',
+    'new_mail'                  => 'New Mail',
+    'save_print'                => 'Save and Print',
+
+    'no_messages'               => 'No Messages',
+    'read_all_messages'         => 'Read All Messages',
+    'read_all_notifications'    => 'Read All Notifications',
 ];

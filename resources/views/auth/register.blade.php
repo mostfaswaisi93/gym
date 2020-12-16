@@ -14,7 +14,7 @@
     <meta name="author" content="PIXINVENT">
     <title>{{ trans('admin.sitename') }} | {{ trans('admin.register') }}</title>
     <link rel="apple-touch-icon" href="{{ url('admin_files/app-assets/images/ico/apple-icon-120.png') }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url('admin_files/app-assets/images/ico/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/theme/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     @if (app()->getLocale() == 'en')
@@ -38,11 +38,6 @@
         href="{{ url('admin_files/app-assets/css/core/colors/palette-gradient.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url('admin_files/app-assets/css/pages/authentication.css') }}">
     <!-- END: Page CSS-->
-
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ url('admin_files/assets/css/style.css') }}">
-    <!-- END: Custom CSS-->
-
     @else
 
     <!-- BEGIN: Vendor CSS-->
@@ -69,7 +64,6 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url('admin_files/app-assets/css-rtl/custom-rtl.css') }}">
     <!-- END: Custom CSS-->
-
     @endif
 
     <link rel="stylesheet" type="text/css" href="{{url('/css/styles.css')}}">

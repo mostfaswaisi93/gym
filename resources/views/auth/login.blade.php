@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="loading" dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}" lang="{{ LaravelLocalization::getCurrentLocaleName() }}">
+<html class="loading" dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}"
+    lang="{{ LaravelLocalization::getCurrentLocaleName() }}">
 
 <!-- BEGIN: Head-->
 
@@ -62,11 +63,12 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url('admin_files/app-assets/css-rtl/custom-rtl.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url('css/styles-rtl.css') }}">
-
     @endif
 
-    <link rel="stylesheet" type="text/css" href="{{url('/css/styles.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="{{url('/css/styles.css')}}">
 </head>
 <!-- END: Head-->
 
@@ -87,7 +89,6 @@
                         <div class="card bg-authentication rounded-0 mb-0">
                             <div class="row m-0">
                                 <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
-                                    <img src="{{ url('images/theme/gym.png') }}" alt="Logo">
                                     <img src="{{ url('admin_files/app-assets/images/pages/login.png') }}"
                                         alt="branding logo">
                                 </div>
@@ -100,22 +101,24 @@
                                         </div>
                                         <p class="px-2">{{ trans('admin.login_msg') }}</p>
                                         <div class="card-content">
-                                            <div class="card-body pt-1"> 
-                                                <form action="{{route('login')}}" method="POST">
+                                            <div class="card-body pt-1">
+                                                <form action="{{route('login')}}" method="POST" id="loginForm">
                                                     @csrf
                                                     @include('partials._errors')
+                                                    <br>
                                                     <fieldset
                                                         class="form-label-group form-group position-relative has-icon-left">
-                                                        <input id="email" type="text" class="form-control" name="email"
-                                                            placeholder="{{ trans('admin.email') }}">
+                                                        <input id="username" type="text" class="form-control"
+                                                            name="username" placeholder="{{ trans('admin.username') }}">
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
-                                                        <label for="email">{{ trans('admin.email') }}</label>
+                                                        <label for="username">{{ trans('admin.username') }}</label>
                                                     </fieldset>
                                                     <fieldset class="form-label-group position-relative has-icon-left">
                                                         <input id="password" type="password" class="form-control"
-                                                            name="password" placeholder="{{ trans('admin.password') }}">
+                                                            name="password" placeholder="{{ trans('admin.password') }}"
+                                                            data-parsley-length="[6,12]" data-parsley-trigger="keyup">
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
@@ -152,9 +155,14 @@
     <!-- END: Content-->
 
     <!-- BEGIN: Vendor JS-->
-    <script src="{{ url('admin_files/app-assets/vendors/js/vendors.min.js') }}"></script>
+    {{-- <script src="{{ url('admin_files/app-assets/vendors/js/vendors.min.js') }}"></script> --}}
     <!-- BEGIN Vendor JS-->
 
+    <script>
+        $(function(){
+            $("#loginForm").parsley();
+        });
+    </script>
 </body>
 <!-- END: Body-->
 
