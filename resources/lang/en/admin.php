@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'sitename'                  => 'Gym',
+    'back_home'                 => 'Go to the Home Page',
+    'page_not_found'            => 'Page Not Found',
+    'internal_server_error'     => 'Internal Server Error',
     'home'                      => 'Home',
     'logout'                    => 'Logout',
     'available'                 => 'Available',
@@ -17,9 +21,14 @@ return [
     'print'                     => 'Print',
     'close'                     => 'Close',
     'login'                     => 'Login',
+    'register'                  => 'Register',
+    'create_account'            => 'Create a new account',
+    'login_msg'                 => 'Hello, Please Log In',
+    'register_msg'              => 'Fill out the form below to create a new account!',
     'remember_me'               => 'Remember Me',
     'password'                  => 'Password',
     'password_confirmation'     => 'Password Confirmation',
+    'change_password'           => 'Change Password',
 
     'confirm_delete'            => 'Confirm Delete',
     'yes'                       => 'Yes',
@@ -29,7 +38,19 @@ return [
     'updated_successfully'      => 'updated_successfully',
     'deleted_successfully'      => 'deleted_successfully',
 
-    'users'                     => 'Users',
     'phone'                     => 'Phone',
+    'mobile'                    => 'Mobile',
     'address'                   => 'Address',
+    'show_contact'              => 'Show Contact',
+    'first_name'                => 'First Name',
+    'last_name'                 => 'Last Name',
+    'email'                     => 'Email',
+    'image'                     => 'Image',
+    'status'                    => 'Status',
+    'language'                  => 'Language',
+    'user_image'                => 'User Image',
+    'icon'                      => 'Icon',
+    'file_upload'               => 'File Upload',
+    'icon_upload'               => 'Icon Upload',
+    'action'                    => 'Action',
 ];

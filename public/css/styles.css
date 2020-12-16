@@ -93,3 +93,7 @@ label {
     border: 0;
     padding: 15px;
 }
+
+.bg-authentication .login-footer {
+    margin: auto;
+}

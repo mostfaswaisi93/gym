@@ -18,6 +18,6 @@ class UsersTableSeeder extends Seeder
             'updated_at'    => date('Y-m-d')
         ]);
 
-        $user->attachRole('super_admin');
+        // $user->attachRole('super_admin');
     }
 }
