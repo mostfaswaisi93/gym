@@ -65,9 +65,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/styles-rtl.css') }}">
     @endif
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="{{url('/css/styles.css')}}">
 </head>
 <!-- END: Head-->
@@ -117,8 +114,7 @@
                                                     </fieldset>
                                                     <fieldset class="form-label-group position-relative has-icon-left">
                                                         <input id="password" type="password" class="form-control"
-                                                            name="password" placeholder="{{ trans('admin.password') }}"
-                                                            data-parsley-length="[6,12]" data-parsley-trigger="keyup">
+                                                            name="password" placeholder="{{ trans('admin.password') }}">
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
@@ -155,14 +151,9 @@
     <!-- END: Content-->
 
     <!-- BEGIN: Vendor JS-->
-    {{-- <script src="{{ url('admin_files/app-assets/vendors/js/vendors.min.js') }}"></script> --}}
+    <script src="{{ url('admin_files/app-assets/vendors/js/vendors.min.js') }}"></script>
     <!-- BEGIN Vendor JS-->
 
-    <script>
-        $(function(){
-            $("#loginForm").parsley();
-        });
-    </script>
 </body>
 <!-- END: Body-->
 

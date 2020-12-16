@@ -29,6 +29,7 @@ return [
     'password'                  => 'Password',
     'password_confirmation'     => 'Password Confirmation',
     'change_password'           => 'Change Password',
+    'too_many_requests'         => 'Too Many Requests, Wait 60 Seconds and Try Again',
 
     'confirm_delete'            => 'Confirm Delete',
     'yes'                       => 'Yes',
