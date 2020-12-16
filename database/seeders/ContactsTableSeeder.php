@@ -8,10 +8,10 @@ class ContactsTableSeeder extends Seeder
     public function run()
     {
         Contact::create([
-            'title'         => 'Error',
+            'title'         => 'Error Message',
             'customer_id'   => 1,
             'mobile'        => '0595817016',
-            'message'       => 'Error-Error-Error'
+            'message'       => 'Something Wrong!'
         ]);
     }
 }

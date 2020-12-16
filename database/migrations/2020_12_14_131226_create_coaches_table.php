@@ -15,7 +15,9 @@ class CreateCoachesTable extends Migration
     {
         Schema::create('coaches', function (Blueprint $table) {
             $table->id();
+            $table->boolean('enabled')->default(1);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}">
+<html class="loading" dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}" lang="{{ LaravelLocalization::getCurrentLocaleName() }}">
 
 <!-- BEGIN: Head-->
 
@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Laravel - Teacher System">
-    <meta name="keywords" content="Laravel - Teacher System">
+    <meta name="description" content="Laravel - Gym System">
+    <meta name="keywords" content="Laravel - Gym System">
     <meta name="author" content="PIXINVENT">
     <title>{{ trans('admin.sitename') }} | {{ trans('admin.login') }}</title>
     <link rel="apple-touch-icon" href="{{ url('admin_files/app-assets/images/ico/apple-icon-120.png') }}">
