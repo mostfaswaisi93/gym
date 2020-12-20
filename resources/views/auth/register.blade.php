@@ -157,6 +157,12 @@
     <script src="{{ url('admin_files/app-assets/vendors/js/vendors.min.js') }}"></script>
     <!-- BEGIN Vendor JS-->
 
+    <!-- BEGIN: Theme JS-->
+    <script src="{{ url('admin_files/app-assets/js/core/app-menu.js') }}"></script>
+    <script src="{{ url('admin_files/app-assets/js/core/app.js') }}"></script>
+    <script src="{{ url('admin_files/app-assets/js/scripts/components.js') }}"></script>
+    <!-- END: Theme JS-->
+
 </body>
 <!-- END: Body-->
 

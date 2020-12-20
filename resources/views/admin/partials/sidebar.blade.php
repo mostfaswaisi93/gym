@@ -6,7 +6,7 @@
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto">
                 <a class="navbar-brand" href="{{ route('admin.index') }}">
-                    <img src="{{ url('admin_files/logo.png') }}" alt="avatar" height="35" width="35"
+                    <img src="{{ url('images/theme/logo.png') }}" alt="avatar" height="35" width="35"
                         style="background-position: -65px -54px;">
                     <h2 class="brand-text mb-0" style="color: #fff">{{ trans('admin.sitename') }}</h2>
                 </a>
@@ -29,22 +29,18 @@
                     <span class="title">{{ trans('admin.home') }}</span>
                 </a>
             </li>
-            @if (auth()->user()->hasPermission('notifications_read'))
-            <li {{ request()->route()->getName() === 'admin.notifications.index' ? 'class=active' : '' }}>
+            {{-- <li {{ request()->route()->getName() === 'admin.notifications.index' ? 'class=active' : '' }}>
                 <a href="{{ route('admin.notifications.index') }}" class="nav-link">
                     <i class="fa fa-bell"></i>
                     <span class="title">{{ trans('admin.notifications') }}</span>
                 </a>
-            </li>
-            @endif
-            @if (auth()->user()->hasPermission('contacts_read'))
-            <li {{ request()->route()->getName() === 'admin.contacts.index' ? 'class=active' : '' }}>
+            </li> --}}
+            {{-- <li {{ request()->route()->getName() === 'admin.contacts.index' ? 'class=active' : '' }}>
                 <a href="{{ route('admin.contacts.index') }}" class="nav-link">
                     <i class="ficon feather icon-mail"></i>
                     <span class="title">{{ trans('admin.contacts') }}</span>
                 </a>
-            </li>
-            @endif
+            </li> --}}
             <li class="nav-item">
                 <a href="#">
                     <i class="fa fa-info-circle"></i>
@@ -52,66 +48,46 @@
                     {{-- <span class="badge badge badge-primary badge-pill float-right mr-2">New</span> --}}
                 </a>
                 <ul class="menu-content">
-                    @if (auth()->user()->hasPermission('countries_read'))
-                    <li {{ request()->route()->getName() === 'admin.countries.index' ? 'class=active' : '' }}>
+                    {{-- <li {{ request()->route()->getName() === 'admin.countries.index' ? 'class=active' : '' }}>
                         <a href="{{ route('admin.countries.index') }}" class="nav-link">
                             <i class="fa fa-flag"></i>
                             <span class="title">{{ trans('admin.countries') }}</span>
                         </a>
                     </li>
-                    @endif
-                    @if (auth()->user()->hasPermission('cities_read'))
                     <li {{ request()->route()->getName() === 'admin.cities.index' ? 'class=active' : '' }}>
                         <a href="{{ route('admin.cities.index') }}" class="nav-link">
                             <i class="fa fa-building-o"></i>
                             <span class="title">{{ trans('admin.cities') }}</span>
                         </a>
                     </li>
-                    @endif
-                    @if (auth()->user()->hasPermission('payment_methods_read'))
                     <li {{ request()->route()->getName() === 'admin.payment_methods.index' ? 'class=active' : '' }}>
                         <a href="{{ route('admin.payment_methods.index') }}" class="nav-link">
                             <i class="fa fa-money"></i>
                             <span class="title">{{ trans('admin.payment_methods') }}</span>
                         </a>
-                    </li>
-                    @endif
-                    @if (auth()->user()->hasPermission('rates_read'))
-                    <li {{ request()->route()->getName() === 'admin.rates.index' ? 'class=active' : '' }}>
-                        <a href="{{ route('admin.rates.index') }}" class="nav-link">
-                            <i class="fa fa-list"></i>
-                            <span class="title">{{ trans('admin.rates') }}</span>
-                        </a>
-                    </li>
-                    @endif
+                    </li> --}}
                 </ul>
             </li>
-            @if (auth()->user()->hasPermission('users_read'))
             <li class="nav-item">
                 <a href="#">
                     <i class="feather icon-users"></i>
                     <span class="menu-title">{{ trans('admin.users_management') }}</span>
                 </a>
                 <ul class="menu-content">
-                    @if (auth()->user()->hasPermission('users_read'))
-                    <li {{ request()->route()->getName() === 'admin.users.index' ? 'class=active' : '' }}>
+                    {{-- <li {{ request()->route()->getName() === 'admin.users.index' ? 'class=active' : '' }}>
                         <a href="{{ route('admin.users.index') }}" class="nav-link">
                             <i class="feather icon-users"></i>
                             <span class="title">{{ trans('admin.users') }}</span>
                         </a>
                     </li>
-                    @endif
-                    @if (auth()->user()->hasPermission('roles_read'))
                     <li {{ request()->route()->getName() === 'admin.roles.index' ? 'class=active' : '' }}>
                         <a href="{{ route('admin.roles.index') }}" class="nav-link">
                             <i class="fa fa-sliders"></i>
                             <span class="title">{{ trans('admin.roles') }}</span>
                         </a>
-                    </li>
-                    @endif
+                    </li> --}}
                 </ul>
             </li>
-            @endif
             <li class="nav-item">
                 <a href="#">
                     <i class="fa fa-bar-chart"></i>
@@ -126,14 +102,12 @@
                     </li>
                 </ul>
             </li>
-            @if (auth()->user()->hasPermission('settings_read'))
             <li {{ request()->route()->getName() === 'admin.settings.index' ? 'class=active' : '' }}>
-                <a href="{{ route('admin.settings.index') }}" class="nav-link">
+                {{-- <a href="{{ route('admin.settings.index') }}" class="nav-link">
                     <i class="feather icon-settings"></i>
                     <span class="title">{{ trans('admin.settings') }}</span>
-                </a>
+                </a> --}}
             </li>
-            @endif
         </ul>
     </div>
 </div>
